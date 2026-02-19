@@ -7,7 +7,7 @@ use rand::Rng;
 
 const SMALL_ANGLE_EPSILON: f32 = 1.0e-8;
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub struct SE3F32 {
     pub r: SO3F32,
     pub t: Vec3AF32,

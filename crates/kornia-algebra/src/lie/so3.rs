@@ -5,7 +5,7 @@ use crate::{
 use rand::Rng;
 const SMALL_ANGLE_EPSILON: f32 = 1.0e-8;
 
-#[derive(Debug, Clone, Copy)]
+#[derive(Debug, Clone, Copy, PartialEq)]
 pub struct SO3F32 {
     pub q: QuatF32,
 }
